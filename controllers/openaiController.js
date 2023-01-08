@@ -24,6 +24,12 @@ const generateImage = async (req, res) => {
       success: true,
       data: imageUrl,
     });
+
+    console.log(`
+      image generateed ${prompt}
+      size: ${size}
+      url: ${imageUrl}
+    `)
   } catch (error) {
     if (error.response) {
       console.log(error.response.status);
