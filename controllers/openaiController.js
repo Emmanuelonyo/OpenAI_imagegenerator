@@ -26,7 +26,7 @@ const generateImage = async (req, res) => {
     });
 
     console.log(`
-      image generateed ${prompt}
+      Prompt: ${prompt}
       size: ${size}
       url: ${imageUrl}
     `)
